@@ -86,6 +86,7 @@ button {
 }
 
 /* What does this CSS rule do? */
+/*  this adds an arrow image to the dropdown of the form*/
 select {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -113,11 +114,13 @@ select:hover, button:hover {
 }
 
 /* What does this pseudo-class mean? */
+/* this  give a width of 5px  to the text input  when focus on it*/
 .text-input:focus {
   border-right-width: 5px;
 }
 
 /* What does this pseudo-class mean? */
+/* this adds an dashed border to the input that has a placeholder*/
 .text-input:placeholder-shown {
   border-style: dashed;
 }
@@ -137,12 +140,14 @@ select:hover, button:hover {
 }
 
 /* What does this selector do? */
+/* It changes the color and style of the text once the checkbox is checked*/
 .checkbox:checked + label {
   color: #999999;
   font-style: italic;
 }
 
 /* What does this selector do? */
+/* add a Thanks message after the checkbox is checked*/
 .checkbox:checked + label::after {
   margin-left: 10px;
   font-size: 90%;

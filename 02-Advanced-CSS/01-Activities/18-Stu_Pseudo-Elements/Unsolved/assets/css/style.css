@@ -60,9 +60,23 @@ article p {
 }
 
 /* TODO: Style the term/phrase - underline, black text, grab cursor */
+h2[data-css]{
+  position: relative;
+  cursor: grab;
+  text-decoration: underline;
+}
 
 /* TODO: Position tooltip above the term/phrase, same color as header and nav links, no border-radius, smaller font size */
-
+h2[data-css]:hover::after{
+  content: attr(data-css);
+  display: absolute;
+  left: 0px;
+  bottom: 23px;
+  background-color: #13293d;
+  padding: 12px;
+  color: #fff;
+  font-size: 12px;
+}
 aside {
   width: 25%;
 }

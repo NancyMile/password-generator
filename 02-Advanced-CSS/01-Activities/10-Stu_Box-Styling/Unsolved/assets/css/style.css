@@ -70,10 +70,18 @@ footer {
   padding: 10px;
   margin: 20px;
   flex: 0 0 300px;
+  /* border rounded corners */
+  border-radius: 2em;
+ /* grey shadow */
+  box-shadow: 2px 2px 3px rgb(46, 45, 45);
+  /* transform skew */
+  transform: skewY(10deg);
 }
 
 .card header {
   padding: 20px;
+  /* border rounded corners on the top*/
+  border-radius: 2em 2em 0 0;
 }
 
 .card p {

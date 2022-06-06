@@ -9,6 +9,8 @@ body {
 
 main {
   display: flex;
+  /* wrap elements */
+  flex-wrap: wrap;
   margin-top: 2%;
 }
 

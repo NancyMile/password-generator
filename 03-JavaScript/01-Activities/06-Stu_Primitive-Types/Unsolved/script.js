@@ -18,6 +18,6 @@ five = false;
 six = 23;
 
 // Insert comments to explain what each console log below will log to the console
-console.log(typeof four);
-console.log(typeof five);
-console.log(typeof six);
+console.log(typeof four); // this will print string
+console.log(typeof five); // this  will print boolean
+console.log(typeof six); //this will print number

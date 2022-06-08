@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+header {
+  padding: 40px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+}
+
+/* 
+What happens when we set the display property to flex? 
+TODO: Write your answer here
+It helps to arrage the items on the screen according with its size,
+ it shrimp or expands items according to the available screen space
+*/
+nav {
+  display: flex;
+  background-color: #d8a47f;
+}
+
+nav a {
+  color: #13293d;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* 
+What is the flex-wrap property? 
+TODO: Write your answer here 
+This property ensure the display of items accordindly  with the width of the screen
+to avoid overflow
+*/
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside {
+  flex: 1;
+  background-color: #b9c6ae;
+  padding: 80px;
+  text-align: center;
+}
+
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+}
+
+/* 
+What does the justify-content property do? 
+TODO: Write your answer here 
+Justify alings the content to the center
+*/
+.products {
+  flex: 4;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* 
+What is the flex property a shorthand property for?
+What is it doing here? 
+TODO: Write your answer here
+This flar  property here is making  sure that this particular element
+that is part  of the flex display. gets minimun a 400px size.
+*/
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 0 0 400px;
+}
+
+.card header {
+  padding: 20px;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+/* 
+What does the flex-direction property define?
+What is it doing here? 
+TODO: Write your answer here 
+Flex dirrection is making the elemtent on the nav element be displayed as
+column  when the size  is bellow 768px
+*/
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+}
